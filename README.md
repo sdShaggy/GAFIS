@@ -532,3 +532,51 @@ Unlike traditional image restoration systems, the proposed framework prioritizes
 9. Jain, A.K. — Fingerprint Recognition Research
 
 10. Recent IEEE papers on forensic AI and latent fingerprint enhancement
+
+---
+
+# 19. System Flow Architecture
+
+```mermaid
+flowchart TD
+
+A[Latent Fingerprint Input] --> B[Preprocessing Module]
+
+B --> B1[Enhancement & Denoising]
+B --> B2[Segmentation]
+B --> B3[Ridge Feature Normalization]
+
+B3 --> C[Ridge Orientation Estimation]
+
+C --> C1[Orientation Field Map]
+
+C1 --> D[Pix2Pix GAN Enhancement]
+
+D --> D1[Generator U-Net]
+D --> D2[Discriminator PatchGAN]
+D --> D3[Loss Functions L1 + SSIM + Adversarial]
+
+D3 --> E[Enhanced Fingerprint Output]
+
+E --> F[Minutiae Detection YOLOv8]
+
+F --> F1[Ridge Endings]
+F --> F2[Bifurcations]
+
+F --> G[AFIS Matching SourceAFIS]
+
+G --> G1[Feature Template Creation]
+G --> G2[Matching Score Computation]
+
+G2 --> H[Evaluation Module]
+
+H --> H1[SSIM]
+H --> H2[PSNR]
+H --> H3[Precision Recall]
+H --> H4[FAR FRR]
+
+H --> I[Forensic Dashboard]
+
+I --> I1[Before vs After Comparison]
+I --> I2[Final Report]
+```
