@@ -201,8 +201,8 @@ The proposed framework consists of six stages.
 | Dataset             | Purpose         |
 | ------------------- | --------------- |
 | SOCOFing            | Training        |
-| FVC2004             | Evaluation      |
-| NIST SD302 (subset) | Latent analysis |
+| Kaggle Fingerprint Dataset             | Evaluation      |
+| PolyU Noisy Set | Latent analysis |
 
 ### Synthetic Degradation
 
