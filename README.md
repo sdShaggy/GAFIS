@@ -18,7 +18,7 @@ Digital Forensics, Artificial Intelligence, Computer Vision, Biometric Security
 
 8 Weeks
 
-### Proposed Duration
+### Guide
 
 Dr. Ajit Kumar Keshri
 
