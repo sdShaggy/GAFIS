@@ -194,7 +194,7 @@ The proposed framework consists of six stages.
 
 ---
 
-## Stage 1 — Dataset Preparation & Synthetic Degradation
+## Stage 1 - Dataset Preparation & Synthetic Degradation
 
 ### Datasets
 
@@ -219,7 +219,7 @@ Artificial degradation techniques:
 
 ---
 
-## Stage 2 — Preprocessing & Enhancement
+## Stage 2 - Preprocessing & Enhancement
 
 ### Operations
 
@@ -238,7 +238,7 @@ Purpose:
 
 ---
 
-## Stage 3 — Ridge Orientation Estimation
+## Stage 3 - Ridge Orientation Estimation
 
 Orientation field estimation is used to preserve ridge flow consistency.
 
@@ -255,7 +255,7 @@ Orientation field estimation is used to preserve ridge flow consistency.
 
 ---
 
-## Stage 4 — Pix2Pix-Based Fingerprint Enhancement
+## Stage 4 - Pix2Pix-Based Fingerprint Enhancement
 
 ### Generator
 
@@ -285,7 +285,7 @@ Instead, it predicts plausible ridge continuity patterns for forensic enhancemen
 
 ---
 
-## Stage 5 — Automated Minutiae Localization
+## Stage 5 - Automated Minutiae Localization
 
 YOLOv8 will be used for minutiae detection.
 
@@ -302,7 +302,7 @@ YOLOv8 will be used for minutiae detection.
 
 ---
 
-## Stage 6 — AFIS Matching Evaluation
+## Stage 6 - AFIS Matching Evaluation
 
 ### Matching Pipeline
 
@@ -372,12 +372,8 @@ Generate final forensic analysis report.
 
 ---
 
-## Detection Metrics
-
 * Precision
 * Recall
-* mAP
-* F1-score
 
 ---
 
@@ -386,6 +382,22 @@ Generate final forensic analysis report.
 * Matching score improvement
 * FAR (False Acceptance Rate)
 * FRR (False Rejection Rate)
+
+---
+
+# Stramlit Dashboard
+
+## Pages
+
+- **Case Overview** - abstract, headline results, pipeline diagram, scope
+- **Stage 1** - dataset & synthetic degradation stats
+- **Stage 4** - Pix2Pix architecture, full training curve, PSNR/SSIM
+- **Stage 5** - YOLOv8 minutiae localization training + aggregate results
+- **Stage 6** - SourceAFIS matching, pass rates, FAR/FRR
+- **Live Sample Walkthrough** - one validation print carried through the full pipeline
+- **Limitations & Scope** - honest accounting of what was cut vs. the original proposal
+- **Math Appendix** - every formula behind every metric shown
+
 
 ---
 
@@ -472,6 +484,14 @@ This project acknowledges significant forensic and ethical concerns.
 
 ---
 
+## Appendices 
+
+GAFIS Dataset and Detailed Results : 
+
+https://drive.google.com/drive/folders/130m2u8Hszwm-eekzNiiMRkv__m0NiU0G?usp=drive_link
+
+---
+
 # 15. Future Scope
 
 Future extensions may include:
@@ -519,17 +539,17 @@ Unlike traditional image restoration systems, the proposed framework prioritizes
 
 3. FVC2004 Fingerprint Verification Competition Dataset
 
-4. Goodfellow et al. — Generative Adversarial Networks
+4. Goodfellow et al. - Generative Adversarial Networks
 
-5. Isola et al. — Pix2Pix Image-to-Image Translation
+5. Isola et al. - Pix2Pix Image-to-Image Translation
 
-6. Ronneberger et al. — U-Net Architecture
+6. Ronneberger et al. - U-Net Architecture
 
 7. SourceAFIS Documentation
 
 8. YOLOv8 Documentation
 
-9. Jain, A.K. — Fingerprint Recognition Research
+9. Jain, A.K. - Fingerprint Recognition Research
 
 10. Recent IEEE papers on forensic AI and latent fingerprint enhancement
 
